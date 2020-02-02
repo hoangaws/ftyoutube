@@ -26,7 +26,7 @@ class _ChoiceCardState extends State<ChoiceCard> {
         onTap: () {
           Navigator.of(context).push(MaterialPageRoute(
               builder: (BuildContext context) => MyWebView(
-                    title: "Alligator.io",
+                    title: widget.choice.title,
                     selectedUrl: widget.choice.link,
                   )));
         },
