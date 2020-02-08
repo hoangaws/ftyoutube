@@ -20,8 +20,6 @@ class ChoiceCard extends StatefulWidget {
 class _ChoiceCardState extends State<ChoiceCard> {
   @override
   Widget build(BuildContext context) {
-    final TextStyle textStyle = Theme.of(context).textTheme.display1;
-
     return InkWell(
         onTap: () {
           Navigator.of(context).push(MaterialPageRoute(
@@ -36,8 +34,12 @@ class _ChoiceCardState extends State<ChoiceCard> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Image(
-                    image: AssetImage('assets/images/' + widget.choice.image)),
-                Text(widget.choice.title),
+                  image: AssetImage('assets/images/' + widget.choice.image),
+                  fit: BoxFit.cover,
+                ),
+                Container(
+                  child: Text(widget.choice.title),
+                )
               ]),
         ));
   }

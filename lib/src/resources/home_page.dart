@@ -12,9 +12,36 @@ class MyHomePage extends StatefulWidget {
 }
 
 const List<Choice> choices = const <Choice>[
-  const Choice(title: 'GIẤY PHÉP', image: 'gplx.jpeg',link:'https://gplx.gov.vn/'  ),
-  const Choice(title: 'VI PHẠM ', image: 'vipham.jpeg',link:'http://www.csgt.vn/tra-cuu-phuong-tien-vi-pham.html' ),
-  const Choice(title: 'ĐĂNG KIỂM', image: 'dangkiem.jpeg',link:'http://www.vr.org.vn/ptpublic_web/ThongTinPTPublic.aspx' ),
+  const Choice(
+      title: 'GIẤY PHÉP', image: 'gplx.jpeg', link: 'https://gplx.gov.vn/'),
+  const Choice(
+      title: 'VI PHẠM ',
+      image: 'vipham.jpeg',
+      link: 'http://www.csgt.vn/tra-cuu-phuong-tien-vi-pham.html'),
+  const Choice(
+      title: 'ĐĂNG KIỂM',
+      image: 'dangkiem.jpeg',
+      link: 'http://www.vr.org.vn/ptpublic_web/ThongTinPTPublic.aspx'),
+  const Choice(
+      title: 'GIẤY PHÉP', image: 'gplx.jpeg', link: 'https://gplx.gov.vn/'),
+  const Choice(
+      title: 'VI PHẠM ',
+      image: 'vipham.jpeg',
+      link: 'http://www.csgt.vn/tra-cuu-phuong-tien-vi-pham.html'),
+  const Choice(
+      title: 'ĐĂNG KIỂM',
+      image: 'dangkiem.jpeg',
+      link: 'http://www.vr.org.vn/ptpublic_web/ThongTinPTPublic.aspx'),
+  const Choice(
+      title: 'GIẤY PHÉP', image: 'gplx.jpeg', link: 'https://gplx.gov.vn/'),
+  const Choice(
+      title: 'VI PHẠM ',
+      image: 'vipham.jpeg',
+      link: 'http://www.csgt.vn/tra-cuu-phuong-tien-vi-pham.html'),
+  const Choice(
+      title: 'ĐĂNG KIỂM',
+      image: 'dangkiem.jpeg',
+      link: 'http://www.vr.org.vn/ptpublic_web/ThongTinPTPublic.aspx'),
 ];
 
 class _MyHomePageState extends State<MyHomePage> {
@@ -27,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Column(children: <Widget>[
-        SliderImage(height: 250, width: width),
+        SliderImage(height: 180, width: width),
         Container(
           child: GridView(
               shrinkWrap: true,
