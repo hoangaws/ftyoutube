@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/src/resources/widgets/web_view.dart';
+import 'package:flutter_app/src/app2/widgets/web_view.dart';
 
 class Choice {
   const Choice({this.title, this.image, this.link});

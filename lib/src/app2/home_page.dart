@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/src/resources/widgets/choice_card.dart';
-import 'package:flutter_app/src/resources/widgets/drawer_menu.dart';
-import 'package:flutter_app/src/resources/widgets/slider_image.dart';
+import 'package:flutter_app/src/app2/widgets/choice_card.dart';
+import 'package:flutter_app/src/app2/widgets/drawer_menu.dart';
+import 'package:flutter_app/src/app2/widgets/slider_image.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);

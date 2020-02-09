@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/src/resources/home_page.dart';
+import 'package:flutter_app/src/app2/home_page.dart';
 
 class MyApp extends StatelessWidget {
   final appTitle = "Tra cứu giao thông";
