@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter_app/src/resources/shared/loader/loader.dart';
+import 'package:flutter_app/src/resources/shared/loader/color_loader.dart';
 import 'package:flutter_app/src/services/services_import.dart';
 import 'package:provider/provider.dart';
 
@@ -57,7 +57,7 @@ class ProfileScreen extends StatelessWidget {
       ),
     );
     } else {
-      return LoadingScreen();
+      return ColorLoader();
     }
   }
 

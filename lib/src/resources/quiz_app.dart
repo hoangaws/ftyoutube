@@ -1,4 +1,3 @@
-
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_analytics/observer.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -18,16 +17,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        StreamProvider<Report>.value(value: Global.reportRef.documentStream),
+        StreamProvider<Report>.value(value: Global.reportFSRef.documentStream),
         StreamProvider<FirebaseUser>.value(value: AuthService().user),
       ],
       child: MaterialApp(
-        // Firebase Analytics
         navigatorObservers: [
           FirebaseAnalyticsObserver(analytics: FirebaseAnalytics()),
         ],
-
-        // Named Routes
         routes: {
           '/': (context) => LoginScreen(),
           '/topics': (context) => TopicsScreen(),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/src/resources/screens/topics/quiz_list.dart';
-import 'package:flutter_app/src/services/models/topic.dart';
+import 'package:flutter_app/src/resources/screens/topic/quiz_list.dart';
+import 'package:flutter_app/src/services/services_import.dart';
 
 class TopicScreen extends StatelessWidget {
   final Topic topic;
@@ -11,6 +11,7 @@ class TopicScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text('Topic screen'),
         backgroundColor: Colors.transparent,
       ),
       body: ListView(children: [

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/src/resources/screens/topics/quiz_list.dart';
+import 'package:flutter_app/src/resources/screens/topic/quiz_list.dart';
 import 'package:flutter_app/src/services/models/topic.dart';
 
 class TopicDrawer extends StatelessWidget {

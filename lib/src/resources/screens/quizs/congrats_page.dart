@@ -43,7 +43,7 @@ class CongratsPage extends StatelessWidget {
 
   /// Database write to update report doc when complete
   Future<void> _updateUserReport(Quiz quiz) {
-    return Global.reportRef.upsert(
+    return Global.reportFSRef.upsert(
       ({
         'total': FieldValue.increment(1),
         'topics': {

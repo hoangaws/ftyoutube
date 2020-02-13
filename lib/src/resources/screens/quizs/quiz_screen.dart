@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:provider/provider.dart';
+
+import 'package:flutter_app/src/services/services_import.dart';
+import 'package:flutter_app/src/resources/shared/shared_import.dart';
+
 import 'package:flutter_app/src/resources/screens/quizs/question_page.dart';
 import 'package:flutter_app/src/resources/screens/quizs/quiz_state.dart';
 import 'package:flutter_app/src/resources/screens/quizs/start_page.dart';
-import 'package:flutter_app/src/resources/shared/loader/loader.dart';
-import 'package:flutter_app/src/resources/shared/progress_bar.dart';
-import 'package:flutter_app/src/services/database/fireStore/document.dart';
-import 'package:flutter_app/src/services/models/quiz.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:provider/provider.dart';
 
 import 'congrats_page.dart';
 
@@ -25,7 +25,7 @@ class QuizScreen extends StatelessWidget {
           var state = Provider.of<QuizState>(context);
 
           if (!snap.hasData || snap.hasError) {
-            return LoadingScreen();
+            return ColorLoader();
           } else {
             Quiz quiz = snap.data;
             return Scaffold(

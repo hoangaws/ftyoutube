@@ -20,8 +20,8 @@ class Global {
   };
 
   // Firestore References for Writes
-  static final Collection<Topic> topicsRef = Collection<Topic>(path: 'topics');
-  static final UserData<Report> reportRef = UserData<Report>(collection: 'reports');
+  static final Collection<Topic> topicsFSRef = Collection<Topic>(path: 'topics');
+  static final UserData<Report> reportFSRef = UserData<Report>(collection: 'reports');
 
   static final Storage images = Storage(path: 'images');
 }

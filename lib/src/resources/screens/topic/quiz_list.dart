@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/src/resources/screens/topic/quiz_badge.dart';
 import 'package:flutter_app/src/resources/screens/quizs/quiz_screen.dart';
-import 'package:flutter_app/src/resources/shared/progress_bar.dart';
-import 'package:flutter_app/src/services/models/topic.dart';
+import 'package:flutter_app/src/services/services_import.dart';
 
 class QuizList extends StatelessWidget {
   final Topic topic;

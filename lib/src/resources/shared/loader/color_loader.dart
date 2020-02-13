@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ColorLoader4 extends StatefulWidget {
+class ColorLoader extends StatefulWidget {
 
   final Color dotOneColor;
   final Color dotTwoColor;
@@ -8,7 +8,7 @@ class ColorLoader4 extends StatefulWidget {
   final Duration duration;
   final Icon dotIcon;
 
-  ColorLoader4({
+  ColorLoader({
     this.dotOneColor = Colors.redAccent,
     this.dotTwoColor = Colors.amber,
     this.dotThreeColor = Colors.green,
@@ -20,7 +20,7 @@ class ColorLoader4 extends StatefulWidget {
   _ColorLoader4State createState() => _ColorLoader4State();
 }
 
-class _ColorLoader4State extends State<ColorLoader4>
+class _ColorLoader4State extends State<ColorLoader>
     with SingleTickerProviderStateMixin {
   Animation<double> animation_1;
   Animation<double> animation_2;
